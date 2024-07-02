@@ -19,7 +19,7 @@ function LoginScreen() {
   });
 
   const handleSubmit = () => {
-    console.log(login.values);
+    console.log('login.values', login.values);
   };
 
   return (
