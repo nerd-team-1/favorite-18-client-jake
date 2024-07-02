@@ -1,16 +1,13 @@
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {StyleSheet, Text, View} from 'react-native';
+import CommonStackNavigator from './src/navigations/CommonStackNavigator';
 
 function App(): React.JSX.Element {
   return (
     <NavigationContainer>
-      <View>
-        <Text>기본 뷰페이지</Text>
-      </View>
+      <CommonStackNavigator />
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({});
 
 export default App;
