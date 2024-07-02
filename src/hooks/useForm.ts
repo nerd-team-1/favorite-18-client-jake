@@ -9,6 +9,7 @@ function useForm<T>({initialValue, validate}: UseFormProps<T>) {
   const [values, setValues] = useState(initialValue);
   const [touched, setTouched] = useState<Record<string, boolean>>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [inValid, setInValid] = useState(false);
 
   const handleChangeText = (name: keyof T, text: string) => {
     setValues({
@@ -35,9 +36,11 @@ function useForm<T>({initialValue, validate}: UseFormProps<T>) {
   useEffect(() => {
     const newErrors = validate(values);
     setErrors(newErrors);
+    const hasErrors = Object.values(newErrors).some(error => error !== '');
+    setInValid(hasErrors);
   }, [validate, values]);
 
-  return {values, errors, touched, getTextInputProps};
+  return {values, errors, touched, inValid, getTextInputProps};
 }
 
 export default useForm;

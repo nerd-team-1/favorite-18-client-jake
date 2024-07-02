@@ -56,7 +56,11 @@ function SignupScreen() {
           {...signup.getTextInputProps('passwordConfirm')}
         />
       </View>
-      <CustomButton label="회원가입" onPress={handleSubmit} />
+      <CustomButton
+        label="회원가입"
+        inValid={signup.inValid}
+        onPress={handleSubmit}
+      />
     </SafeAreaView>
   );
 }

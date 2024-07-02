@@ -50,8 +50,7 @@ function LoginScreen() {
       </View>
       <CustomButton
         label="로그인"
-        variant="filled"
-        size="large"
+        inValid={login.inValid}
         onPress={handleSubmit}
       />
     </SafeAreaView>
