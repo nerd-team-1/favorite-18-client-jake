@@ -1,10 +1,13 @@
+import {NavigationContainer} from '@react-navigation/native';
 import {StyleSheet, Text, View} from 'react-native';
 
 function App(): React.JSX.Element {
   return (
-    <View>
-      <Text>기본 뷰페이지</Text>
-    </View>
+    <NavigationContainer>
+      <View>
+        <Text>기본 뷰페이지</Text>
+      </View>
+    </NavigationContainer>
   );
 }
 
