@@ -1,4 +1,4 @@
-import {RequestUser} from '../../types/common';
+import {RequestUser} from '@/types/common';
 import instance from '../axios';
 import requests from '../request';
 

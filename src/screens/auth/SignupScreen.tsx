@@ -1,10 +1,10 @@
 import React, {useRef} from 'react';
 import {StyleSheet, TextInput, View} from 'react-native';
-import useForm from '../../hooks/useForm';
+import useForm from '@/hooks/useForm';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import CustomInputField from '../../components/CustomInputField';
-import CustomButton from '../../components/CustomButton';
-import {validateSignup} from '../../utils';
+import CustomInputField from '@/components/CustomInputField';
+import CustomButton from '@/components/CustomButton';
+import {validateSignup} from '@/utils';
 
 function SignupScreen() {
   const passwordRef = useRef<TextInput | null>(null);

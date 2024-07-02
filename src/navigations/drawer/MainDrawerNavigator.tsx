@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import Example1HomeScreen from '../../screens/example1/Example1HomeScreen';
-import Example2HomeScreen from '../../screens/example2/Example2HomeScreen';
-import Example3HomeScreen from '../../screens/example3/Example3HomeScreen';
+import Example1HomeScreen from '@/screens/example1/Example1HomeScreen';
+import Example2HomeScreen from '@/screens/example2/Example2HomeScreen';
+import Example3HomeScreen from '@/screens/example3/Example3HomeScreen';
 
 const Drawer = createDrawerNavigator();
 

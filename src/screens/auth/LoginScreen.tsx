@@ -1,10 +1,10 @@
 import React, {useRef} from 'react';
 import {StyleSheet, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import CustomInputField from '../../components/CustomInputField';
-import CustomButton from '../../components/CustomButton';
-import useForm from '../../hooks/useForm';
-import {validateLogin} from '../../utils';
+import CustomInputField from '@/components/CustomInputField';
+import CustomButton from '@/components/CustomButton';
+import useForm from '@/hooks/useForm';
+import {validateLogin} from '@/utils';
 import {TextInput} from 'react-native-gesture-handler';
 
 function LoginScreen() {
